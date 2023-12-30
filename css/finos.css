@@ -175,18 +175,13 @@ body{
     padding: 2rem;
 }
 .products .col .content .price{
-    border: 0.1rem solid #94b4bf;
-    border-radius: 5px;
+    border: 0.2rem solid #94b4bf;
+    border-radius: 20px;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background: #94b4bf;
     color: var(--min-color);
     cursor: pointer;
-}
-.products .col .content .price:hover{
-    background: none;
-    color: var(--font);
-
 }
 .products .col .content h2{
     font-size: 1.6rem;

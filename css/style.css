@@ -30,6 +30,18 @@ body{
     --font:#1E1916;
     --bg: #FDF5EB;
 }
+.btn-h{
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid #94b4bf;
+    outline: 0;
+    background: #94b4bf;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    color: var(--min-color);
+}
 .btn{
     display: inline-block;
     padding: 0.6rem 2.5rem;
@@ -43,6 +55,10 @@ body{
     color: var(--min-color);
 }
 .btn:hover{
+    background: none;
+    color: #ffff;
+}
+.btn-h:hover{
     background: none;
     color: #ffff;
 }
@@ -125,7 +141,7 @@ section{
     z-index: 100;
 }
 .home .home-slid .box .content h5{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .home .home-slid .box .content h1{
     font-size: 1.4rem;
@@ -256,7 +272,7 @@ section{
 .btn-ab{
     display: inline-block;
     padding: 0.6rem 2.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border: 0.1rem solid #94b4bf;
     outline: 0;
     background: #94b4bf;
@@ -308,18 +324,13 @@ section{
     padding: 2rem;
 }
 .products .col .content .price{
-    border: 0.1rem solid #94b4bf;
-    border-radius: 5px;
+    border: 0.2rem solid #94b4bf;
+    border-radius: 20px;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background: #94b4bf;
     color: var(--min-color);
     cursor: pointer;
-}
-.products .col .content .price:hover{
-    background: none;
-    color: var(--font);
-
 }
 .products .col .content h2{
     font-size: 1.6rem;
@@ -581,7 +592,7 @@ section{
         background: var(--min-color);
     }
     header .logo{
-        margin-top: -25px;
+        margin-top: -35px;
     }
    .home .content .btn{
     font-size: 10px;
@@ -589,8 +600,18 @@ section{
    .home .swiper-wrapper .content h1{
     font-size: 100px;
    }
+   .home .home-slid .box .content h5{
+    font-size: 3rem;
+}
+.home .home-slid .box .content h1{
+    font-size: 2rem;
+    padding: 1.5rem;
+}
    .btn-ab{
     font-size: 8px;
+   }
+   .btn-prd{
+    font-size: 10px;
    }
    .btn{
     font-size: 8px;
