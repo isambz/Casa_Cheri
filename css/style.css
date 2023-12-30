@@ -20,6 +20,10 @@ html{
 body{
    font-size: 65%; 
 }
+::selection {
+    background-color: #e9b4d1; /* Cor de fundo da seleção */
+    color: #000; /* Cor do texto da seleção */
+  }
 :root{
     --min-color: #fff;
     --th-color: #EAA636;
@@ -325,6 +329,10 @@ section{
     font-size: 1rem;
     padding: 1.1rem 0;
 }
+.services{
+    margin-top: -90px;
+    margin-bottom: -100px;
+}
 .services .row{
     display: grid;
     grid-template-columns: 5fr 5fr;
@@ -573,7 +581,7 @@ section{
         background: var(--min-color);
     }
     header .logo{
-        margin-top: -15px;
+        margin-top: -25px;
     }
    .home .content .btn{
     font-size: 10px;
