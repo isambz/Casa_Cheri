@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/zapfino');
-
+                
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +19,7 @@ html{
 }
 body{
    font-size: 65%; 
+   background-color: #fff2ecd0;
 }
 ::selection {
     background-color: #e9b4d1; /* Cor de fundo da seleção */
@@ -29,38 +30,6 @@ body{
     --th-color: #EAA636;
     --font:#1E1916;
     --bg: #FDF5EB;
-}
-.btn-h{
-    display: inline-block;
-    padding: 0.6rem 2.5rem;
-    font-size: 1.2rem;
-    border: 0.1rem solid #94b4bf;
-    outline: 0;
-    background: #94b4bf;
-    border-radius: 1rem;
-    cursor: pointer;
-    text-align: center;
-    color: var(--min-color);
-}
-.btn{
-    display: inline-block;
-    padding: 0.6rem 2.5rem;
-    font-size: 1.2rem;
-    border: 0.1rem solid #94b4bf;
-    outline: 0;
-    background: #94b4bf;
-    border-radius: 1rem;
-    cursor: pointer;
-    text-align: center;
-    color: var(--min-color);
-}
-.btn:hover{
-    background: none;
-    color: #ffff;
-}
-.btn-h:hover{
-    background: none;
-    color: #ffff;
 }
 section{
     padding: 4rem 6%;
@@ -87,7 +56,7 @@ section{
 }
 
 .header .navbar a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--min-color); 
     margin: 0 0.5rem; 
     padding: 0 0.5rem;
@@ -109,63 +78,71 @@ section{
     color: var(--min-color);
     cursor: pointer;
     display: none;
-
 }
-.home .home-slid .box{
-    position: relative;
 
-}
-.home .home-slid .box img{
-    width: 100%;
-    min-height: 100vh;
-    object-fit: cover;
-    top: 0;
-    position: relative;
 
+
+
+.hotel-details{
+    padding: 0 12%;
+    margin-bottom: -70px;
 }
-.home .home-slid .box::after{
-    content: "";
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}  
-.home .home-slid .box .content{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50% , -50%);
-    color: var(--min-color);
+.hotel-title{
+    margin-top: 90px;
+}
+.hotel-title h1{
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "lora","sans-serif";
+    color: #e9b4d1;
+}
+.hotel-title .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+.hotel-title span{
+    margin: 0 20px;
+}
+.hotel-details p{
+font-size: 1.3rem;
+}
+.btn-d{
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    border: 0.1rem solid #94b4bf;
+    outline: 0;
+    background: #94b4bf;
+    border-radius: 1rem;
+    cursor: pointer;
     text-align: center;
-    z-index: 100;
+    color: var(--min-color);
+    margin: 0 75%;
 }
-.home .home-slid .box .content h5{
-    font-size: 2.5rem;
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .' 'first first . .';
+    margin: 20px 0;
 }
-.home .home-slid .box .content h1{
-    font-size: 1.4rem;
-    padding: 1.5rem;
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
 }
-.home .home-slid .swiper-button-next,
-.home .home-slid .swiper-button-prev{
-    padding: .7rem;
-    margin: 0.5rem;
-    background-color: var(--font);
-    border: 15px solid var(--font);
-    border-radius: 50px;
-    top: 87%;
-    left: 50%;
-    width: 2rem;
-    height: 2rem;
-    color: #ffff;
+.gallery-img-1{
+    grid-area: first;
 }
-.home .home-slid .swiper-button-prev{
-    left: 44.5%;
+.hotel-details h3{
+    color: var(--font);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 .products{
-    background: #fff2ecd0;
     margin: 0,2rem 0;
 }
 
@@ -215,6 +192,43 @@ section{
     font-size: 1rem;
     padding: 1.1rem 0;
 }
+
+.cta{
+    margin: 90px auto;
+    margin-top: -15px;
+    background-color: #F5F5F5;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.hero-bnt{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 1rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+ }
+ .hero-bnt:hover{
+    border: 1px solid #94b4bf;
+    background: #94b4bf;
+    transition: 1s;
+    letter-spacing: 3px;
+ }
 
 
 .footer{
@@ -267,12 +281,6 @@ section{
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
-
-
-
-
-
-
 
 
 
@@ -332,7 +340,7 @@ section{
         background: var(--min-color);
     }
     header .logo{
-        margin-top: -25px;
+        margin-top: -35px;
     }
    .home .content .btn{
     font-size: 10px;
@@ -340,8 +348,18 @@ section{
    .home .swiper-wrapper .content h1{
     font-size: 100px;
    }
+   .home .home-slid .box .content h5{
+    font-size: 3rem;
+}
+.home .home-slid .box .content h1{
+    font-size: 2rem;
+    padding: 1.5rem;
+}
    .btn-ab{
     font-size: 8px;
+   }
+   .btn-prd{
+    font-size: 10px;
    }
    .btn{
     font-size: 8px;
@@ -388,5 +406,40 @@ section{
 
     .products .col{
         grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
+    }
+    .hotel-details{
+        margin-top: -60px;
+    }
+    .hotel-title h1{
+        font-size: 2.6rem;
+    }
+    .min-product h3{
+        font-size: 3rem;
+    }
+    .cta h1{
+        font-size: 2.1rem;
+    }
+    .hero-bnt{
+        font-size: 1.6rem;
+    }
+}   
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .house-details{
+        margin-top: 150px;
+    }
+    .row p{
+        margin-top: 10px;
+    }
+    .gallery{
+        grid-template-areas: 'first first' '. .' '. .';
+    }
+    .small-details h2{
+        font-size: 20px;
+        margin-top: 24px;
     }
 }

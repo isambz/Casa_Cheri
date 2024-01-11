@@ -20,16 +20,32 @@ html{
 body{
    font-size: 65%; 
 }
+::selection {
+    background-color: #e9b4d1; /* Cor de fundo da seleção */
+    color: #000; /* Cor do texto da seleção */
+  }
 :root{
     --min-color: #fff;
     --th-color: #EAA636;
     --font:#1E1916;
     --bg: #FDF5EB;
 }
+.btn-h{
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid #94b4bf;
+    outline: 0;
+    background: #94b4bf;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    color: var(--min-color);
+}
 .btn{
     display: inline-block;
     padding: 0.6rem 2.5rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     border: 0.1rem solid #94b4bf;
     outline: 0;
     background: #94b4bf;
@@ -42,6 +58,14 @@ body{
     background: none;
     color: #ffff;
 }
+.btn-h:hover{
+    background: none;
+    color: #ffff;
+}
+section{
+    padding: 4rem 6%;
+}   
+
 .header{
     display: flex;
     align-items: center;
@@ -117,7 +141,7 @@ body{
     z-index: 100;
 }
 .home .home-slid .box .content h5{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .home .home-slid .box .content h1{
     font-size: 1.4rem;
@@ -137,12 +161,12 @@ body{
     color: #ffff;
 }
 .home .home-slid .swiper-button-prev{
-    left: 44.5%;   
+    left: 44.5%;
 }
 
 .products{
     background: #fff2ecd0;
-    margin: 10rem 0;
+    margin: 0,2rem 0;
 }
 
 .products .box-content h2{
@@ -191,6 +215,8 @@ body{
     font-size: 1rem;
     padding: 1.1rem 0;
 }
+
+
 
 
 .footer{
@@ -243,6 +269,8 @@ body{
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
+
+
 
 
 
