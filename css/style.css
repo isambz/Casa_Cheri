@@ -431,12 +431,13 @@ section{
     
 }
 .review .box .content{
-    background: #94b4bf;
+    background: #fff;
     box-shadow: 0 0.5 0.5 rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 2rem 4rem;
     border-radius: 1rem;
     cursor: grab;
+    border: solid 0.1rem #000;
 }
 .review .box img{
     width: 5rem;
@@ -444,18 +445,25 @@ section{
     border-radius: 50%;
     position: absolute;
     top: 2rem; left: 1rem;
-    border: 0.3rem solid var(--min-color);
+    border: 0.1rem solid var(--font);
 }
 .review .box .content h3{
     font-size: 1.4rem;
-    color: var(--min-color);
+    color: var(--font);
     margin: 1rem;
     margin-left: 40px;
 }
 .review .box .content p{
-    color: var(--min-color);
+    color: var(--font);
     font-size: 1rem;
     margin-left: 25px;
+}
+.box .rating i{
+    margin-top: 15px;
+    font-size: 10px;
+    color: red;
+    font-size: 25px;
+    margin-right: -500px;
 }
 
 .footer{
@@ -508,7 +516,6 @@ section{
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
-
 
 
 
@@ -661,5 +668,9 @@ section{
 
     .products .col{
         grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
+    }
+    .box .rating i{
+        margin-right: -315px;
+        font-size: 11px;
     }
 }

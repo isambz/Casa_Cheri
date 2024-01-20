@@ -34,7 +34,7 @@ var swiper = new Swiper(".review-min", {
     },
 
     "1020":{
-      slidesPerView :3,
+      slidesPerView :2,
     },
   },
 });
