@@ -670,7 +670,7 @@ section{
         grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
     }
     .box .rating i{
-        margin-right: -240px;
+        margin-right: -280px;
         font-size: 11px;
     }
 }
