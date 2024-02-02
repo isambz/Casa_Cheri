@@ -231,56 +231,96 @@ font-size: 1.3rem;
  }
 
 
-.footer{
-    background: #94b4bf;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
-    gap: 1rem;
-    text-align: center;
-    padding: 4rem;
+ .footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #94b4bf;
+    padding: 60px 10%;
 }
-.footer h3{
-    font-size: 1.5rem;
-    margin: 1.7rem 0;
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 22px;
     color: #ffbce1;
+    text-transform: capitalize;
 }
-.footer p{
-    font-size: 1rem;
-    margin: 1rem 0;
-    color: var(--min-color);
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #e9b4d1;
+    height: 2px;
+    width: 40px;
 }
-.footer i{
-    font-size: 2rem;
-    margin: 1rem 0.5rem;
-    color: var(--min-color);
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
 }
-.footer i:hover{
-    color: #ffbce1ff;
-}
-.footer a:hover{
-    color: #ffbce1;
-    margin-left: 40px;
-} 
-.footer a{
+
+ul li a{
     display: block;
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    color: var(--min-color);
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
 }
-.footer input{
-    background: none;
-    border: 0.1rem solid var(--min-color);
-    padding: 0.5rem;
-    color: var(--min-color);
-    font-size: 1rem;
+
+ul li a:hover{
+    color: white;
+    padding-left: 8px;
 }
-.footer label{
-    background: var(--th-color);
-    font-size: 1rem;
-    color: var(--min-color);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
 }
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+}
+
+
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+
+@media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
 
 
 
