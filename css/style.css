@@ -20,6 +20,12 @@ html{
 body{
    font-size: 65%; 
 }
+a{
+    text-decoration: none;
+}
+p{
+    text-decoration: none;
+}
 ::selection {
     background-color: #e9b4d1; /* Cor de fundo da seleção */
     color: #000; /* Cor do texto da seleção */
@@ -192,8 +198,20 @@ section{
     color: #ffff;
     font-size: 1.3rem;
     padding: 1.5rem 0;
+    text-decoration: none;
+}
+.total .row .box a{
+    color: #ffff;
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+    text-decoration: none;
 }
 .total .row .box p:hover{
+    color: #1E1916;
+    background: none;
+    letter-spacing: 1px;
+}
+.total .row .box a:hover{
     color: #1E1916;
     background: none;
     letter-spacing: 1px;
@@ -435,7 +453,7 @@ section{
     box-shadow: 0 0.5 0.5 rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 2rem 4rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     cursor: grab;
     border: solid 0.1rem #000;
 }
