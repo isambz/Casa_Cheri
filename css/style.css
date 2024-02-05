@@ -495,8 +495,8 @@ section{
 }
 .menu .toggle{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #94b4bf;
     border-radius: 50px;
@@ -827,11 +827,12 @@ ul li a:hover{
         font-size: 11px;
     }
     .menu{
-        margin-left: 140px;
+        margin-left: 240px;
+       
     }
-    .menu .toggle{
-        width: 60px;
-        height: 60px;
+    .menu li a{
+        width: 73px;
+        height: 73px;
     }
     
     
