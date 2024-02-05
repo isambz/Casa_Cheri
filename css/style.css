@@ -828,7 +828,8 @@ ul li a:hover{
         font-size: 11px;
     }
     .menu{
-        margin-left: 160px;
+        margin-left: 150px;
+        display: none;
        
     }
     .menu li a{
