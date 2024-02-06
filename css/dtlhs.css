@@ -297,9 +297,17 @@ ul li a:hover{
     transition: 0.4s;
 }
 
-.links a:hover{
-    color: #4d4f55;
-    background-color: white;
+.links #wts:hover{
+    color: #ffff;
+    background-color: #25d366;
+}
+.links #face:hover{
+    color: #ffff;
+    background-color: #1877f2;
+}
+.links #insta:hover{
+    color: #ffff;
+    background-color: #E1306C;
 }
 
 

@@ -644,12 +644,20 @@ ul li a:hover{
     text-align: center;
     line-height: 44px;
     border-radius: 50%;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
-.links a:hover{
-    color: #4d4f55;
-    background-color: white;
+.links #wts:hover{
+    color: #ffff;
+    background-color: #25d366;
+}
+.links #face:hover{
+    color: #ffff;
+    background-color: #1877f2;
+}
+.links #insta:hover{
+    color: #ffff;
+    background-color: #E1306C;
 }
 
 
