@@ -340,6 +340,7 @@ section{
     text-align: center;
     background: var(--min-color);
     padding: 2rem;
+    border-radius: 8px;
 }
 .products .col .content .price{
     border: 0.2rem solid #94b4bf;
