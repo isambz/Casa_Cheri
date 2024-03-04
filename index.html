@@ -8,6 +8,7 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/9e006cff0e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <!-- css  -->
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.cdnfonts.com/css/zapfino" rel="stylesheet">
@@ -17,31 +18,74 @@
 <body>
 
     <!-- header  -->
-
     <header class="header">
-        <a href="#home" class="logo">
-            Casa Chéri
-        </a>
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="#home" class="logo">
+                 Casa Chéri
+             </a>
+             
+             
+                 <!-- <a href="#" class="nav__logo">    
+                    <i class="ri-planet-line"></i> Company
+                 </a>
+              -->
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
 
-        <nav class="navbar">
+           <!--=============== NAV MENU ===============-->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="#home" class="nav__link">Principal</a></li>
 
-            <a href="#home">Principal</a>
-            <a href="#about">Sobre nós</a>
-            <a href="#products">Produtos</a>
-            <a href="#services">Serviços</a>
+                 <li><a href="#about" class="nav__link">Sobre Nós</a></li>
 
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Produtos <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="enco.html" class="dropdown__link">
+                             <i class="ri-cake-2-line"></i>    Encomendas
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="corpo.html" class="dropdown__link">
+                             <i class="ri-community-line"></i> Corporativo
+                          </a>
+                       </li>
+
+                       
+                       <li>
+                        <a href="doces.html" class="dropdown__link">
+                            <i class="ri-cake-3-line"></i> Doces Finos
+                        </a>
+                     </li>
+
+                    </ul>
+                 </li>
+                 
+                 <li><a href="#services" class="nav__link">Serviços</a></li>
+
+                 <li><a href="#pe" class="nav__link" id="conta"><span>Contato</span></a></li>
+                 
+
+                
+              </ul>
+           </div>
         </nav>
+     </header>
 
-        <div class="call">
-            <h4>Nosso telefone </h4>
-            <i class="fa-solid fa-phone"> <span> (11)99272-9918</span></i>
-        </div>
-        <div class="bars">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-
-    </header>
+     <!--=============== MAIN JS ===============-->
+     <script src="js/main.js"></script>
 
     <!-- /header  -->
     <!-- home  -->
@@ -60,23 +104,12 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide box">
-                    <div class="image">
-                        <img src="img/como-fazer-bolos-decorados.webp" alt="image">
-                    </div>
-                    <div class="content">
-                        <h5>Sinônimo de delicadeza</h5>
-                        <h1>Com sofisticação &amp; sabor!</h1>
-                        <a href="#products" class="btn-h">Saiba Mais</a>
-                    </div>
 
                 </div>
 
 
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 
         </div>
     </div>
@@ -254,6 +287,8 @@
         </div>
     </section>
 
+    
+
     <section class="review" id="review">
         <div class="heading">
             <h3>Avaliações de Clientes</h3>
@@ -343,6 +378,11 @@
 
     </section>
 
+    <section class="cta">
+        <h1>As delicias da Páscoa já chegaram na Casa Chéri <br> Confira nosso cardápio recheado para você!</h1>
+        <a href="https://www.instagram.com/casa_cheri/" target="_blank"class="hero-bnt">Ver o Cardápio</a>
+    </section>
+
     <div class="menu">
       
         <li style="--i:4;--clr:#25d366">
@@ -366,7 +406,7 @@
 
    
 
-    <section class="footer">
+    <section class="footer" id="pe">
         <div class="footer-col">
             <h4>Fast Links</h4>
             <ul>
