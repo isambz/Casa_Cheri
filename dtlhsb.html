@@ -8,60 +8,107 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/9e006cff0e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <!-- css  -->
-    <link rel="stylesheet" href="./css/dtlhs.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.cdnfonts.com/css/zapfino" rel="stylesheet">
     <link rel="shortcut icon" href="casa.ico" type="image/x-icon">
-    <title>Casa Chéri</title>
+    <title>CC-Sobremesas</title>
 </head>
 <body>
 
-    <!-- header  -->
-
     <header class="header">
-        <a href="index.html" class="logo">
-            Casa Chéri
-        </a>
-
-        <nav class="navbar">
-
-            <a href="index.html">Principal</a>
-            <a href="index.html">Sobre nós</a>
-            <a href="index.html">Produtos</a>
-            <a href="index.html">Serviços</a>
-
-        </nav>
-
-        <div class="call">
-            <h4>Nosso telefone </h4>
-            <i class="fa-solid fa-phone"> <span> (11)99272-9918</span></i>
-        </div>
-        <div class="bars">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-    </header>
-
-    <section class="detalhe">
-    <div class="hotel-details">
-        <div class="hotel-title">
-            <h1>Conheça Os Bolos Chéri</h1>
-        </div>
-        <div class="gallery">
-            <div class="gallery-img-1"><img src="img/blue.png" ></div>
-            <div><img src="cards/bolo 11.png" ></div>
-            <div><img src="cards/bolo 4.png" ></div>
-            <div><img src="cards/bolo 6.png" ></div>
-            <div><img src="cards/bolo 5.png" ></div>
-            <div><img src="cards/bolo 7.png" ></div>
-            <div><img src="cards/bolo 10.png" ></div>
-            <div><img src="cards/bolo 9.png" ></div>
-            <div><img src="img/10.png" ></div>
+        <nav class="nav container">
+           <div class="nav__data">
+            <a href="index.html" class="logo">
+                Casa Chéri
+            </a>
             
-        </div>
+            
+                <!-- <a href="#" class="nav__logo">    
+                   <i class="ri-planet-line"></i> Company
+                </a>
+             -->
+             
+             <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
+             </div>
+          </div>
 
+          <!--=============== NAV MENU ===============-->
+          <div class="nav__menu" id="nav-menu">
+             <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Principal</a></li>
+
+                <li><a href="index.html" class="nav__link">Sobre Nós</a></li>
+
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                   <div class="nav__link">
+                      Produtos <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                   </div>
+
+                   <ul class="dropdown__menu">
+                      <li>
+                         <a href="enco.html" class="dropdown__link">
+                            <i class="ri-cake-2-line"></i>    Encomendas
+                         </a>                          
+                      </li>
+
+                      <li>
+                         <a href="corpo.html" class="dropdown__link">
+                            <i class="ri-community-line"></i> Corporativo
+                         </a>
+                      </li>
+
+                      
+                      <li>
+                       <a href="doces.html" class="dropdown__link">
+                           <i class="ri-cake-3-line"></i> Doces Finos
+                       </a>
+                    </li>
+
+                   </ul>
+                </li>
+                
+                <li><a href="index.html" class="nav__link">Serviços</a></li>
+
+                <li><a href="#pe" class="nav__link" id="conta"><span>Contato</span></a></li>
+                 
+
+                
+              </ul>
+           </div>
+        </nav>
+     </header>
+
+     <!--=============== MAIN JS ===============-->
+     <script src="js/main.js"></script>
+    <!-- /header  -->
+    <!-- home  -->
+    <div class="home" id="home">
+        <div class="swiper home-slid">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="/img/banner.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h5>Matando a sua vontade de uma sobremesa</h5>
+                        <h1>E não se preocupa, aqui bonito também é gostoso!</h1>
+                       
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
     </div>
-    </section>
+
     <div class="products" id="products">
         <div class="product-row">
          
@@ -69,12 +116,188 @@
 
         <section class="min-product">
             <div class="box-content">
-                <h2>Como Funcionam as Encomendas de Bolo Festivo?</h2>
-                <h3>Descubra a personalização em cada pedaço com nossos bolos vendidos por tamanho na Casa Chéri. <br> O peso varia conforme o sabor escolhido, e todos são cuidadosamente elaborados com 3 camadas de massa e 2 camadas de recheio. <br> Com cobertura de Buttercream ou Ganache, nossos bolos apresentam uma explosão de sabores. Garantimos a segurança no transporte, entregando seu bolo em uma caixa resistente e tabuleiro de MDF. <br> A decoração básica, como cobertura lisa, texturizada, drips, trabalho de bico simples e confeitos nacionais, está inclusa, enquanto decorações adicionais serão cobradas com base na complexidade, tempo, elementos e tamanho do bolo. <br> Desfrute de uma experiência única e personalizada em cada celebração!
-                </h3>
+                <h2>Menu Corporativo</h2>
+                <h3>Explore o cardápio corporativo da Casa Chéri. <br> Comprometemo-nos com a excelência, proporcionando momentos memoráveis em eventos corporativos. <br> Nosso cardápio versátil atende desde reuniões a celebrações especiais, sempre com um toque sofisticado. <br> Descubra a confeitaria artesanal de qualidade na Casa Chéri e celebre seus sucessos com sabor e estilo.</h3>
             </div>
 
- 
+            <div class="col">
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/brownie.png" alt="images">
+                        </div>
+                       
+                        <h2>Brownie Dark</h2>
+                        <p>Cardápio da Casa Chéri</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/felicidade.png" alt="images">
+                        </div>
+                        
+                        <h2>Copo da Felicidade</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/traido 2.png" alt="images">
+                        </div>
+                       
+                        <h2>Três Amores</h2>
+                        <p>Cardápio da Casa Chéri</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/chesse 2.png" alt="images">
+                        </div>
+                       
+                        <h2>Chessecake</h2>
+                        <p>Cardápio da Casa Chéri</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/palha 1.png" alt="images">
+                        </div>
+                        
+                        <h2>Palha Italiana</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/palha 2.png" alt="images">
+                        </div>
+                        
+                        <h2>Palha de Ninho</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/caseiro 1.png" alt="images">
+                        </div>
+                        
+                        <h2>Bolo Caseiro - Cenoura</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/caseiro 2.png" alt="images">
+                        </div>
+                        
+                        <h2>Bolo Caseiro - Chocolate</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div> 
+                
+                <!---
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./img/BOLO DE POTE BRIGADEIRO.jpg" alt="images">
+                        </div>
+                        
+                        <h2>Caixa de Presente</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./img/BOLO DE POTE BRIGADEIRO.jpg" alt="images">
+                        </div>
+                        
+                        <h2>Caixa de Chocolate</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                -->
+                <div class="box">
+                    <div class="content">
+                        <div class="images">
+                            <img src="./cards/docin.png" alt="images">
+                        </div>
+                        
+                        <h2>Caixa de Brigadeiros</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">
+                            <span>Ver Detalhes</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                
 
             </div>
         </section>
@@ -82,14 +305,9 @@
 
     </div>
 
-    <section class="cta">
-        <h1>Confira mais sobre nossos bolos <br> no nosso Instagram!</h1>
-        <a href="https://www.instagram.com/casa_cheri/" target="_blank"class="hero-bnt">Ir para o Instagram</a>
-    </section>
 
 
-
-    <section class="footer">
+    <section class="footer" id="pe">
         <div class="footer-col">
             <h4>Fast Links</h4>
             <ul>
@@ -105,14 +323,13 @@
                 <li><a href="enco.html">Encomendas</a></li>
                 <li><a href="corpo.html">Corporativo</a></li>
                 <li><a href="doces.html">Doces Finos</a></li>
-                
             </ul>
         </div>
         <div class="footer-col">
             <h4>Fale Conosco</h4>
             <ul>
                 
-                <li><a href="#">(11)99272-9918</a></li>
+                <li><a href="#"><strong>(11)99272-9918</strong></a></li>
             </ul>
         </div>
         <div class="footer-col">
